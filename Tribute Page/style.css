@@ -1,0 +1,31 @@
+#main {
+    text-align: center;
+  }
+  
+  #title {
+    font-family: apple-system, BlinkMacSystemFont, "Segoe UI";
+    font-size: 40px;
+    color: rgb(51, 51, 51);
+    text-align: center;
+  }
+  
+  img-div {
+    text-align: center;
+    display:block;
+    width: 100%;
+  }
+  
+  #image {
+    width: 100%;
+    height: auto;
+    max-width: 625px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+    display: block;
+  }
+  
+  #img-caption {
+    text-align: center;
+  }
+  
