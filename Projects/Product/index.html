@@ -6,21 +6,21 @@ User Story #3:
 
 User Story #4: 
 
-User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page.
+User Story #5: 
 
-User Story #6: I can watch an embedded product video with id="video".
+User Story #6: 
 
-User Story #7: My landing page has a form element with a corresponding id="form".
+User Story #7: 
 
-User Story #8: Within the form, there is an input field with id="email" where I can enter an email address.
+User Story #8: 
 
-User Story #9: The #email input field should have placeholder text to let the user know what the field is for.
+User Story #9: 
 
-User Story #10: The #email input field uses HTML5 validation to confirm that the entered text is an email address.
+User Story #10: 
 
-User Story #11: Within the form, there is a submit input with a corresponding id="submit".
+User Story #11: 
 
-User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit).
+User Story #12: 
 
 User Story #13: The navbar should always be at the top of the viewport.
 
@@ -37,11 +37,13 @@ User Story #15: My product landing page should utilize CSS flexbox at least once
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Product Landing Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header id="header">
-        <img id="header-img" src="C:\Users\Lachy\Desktop\Ilvaweb.jpg">
-        <h1>Crazy Ilva's Trombone Store</h1>
+        <div class="logo"><img id="header-img" src="C:\Users\Lachy\Desktop\Ilvaweb.jpg">
+            <h1>Crazy Ilva's Trombone Store</h1>
+        </div>
         <nav id="nav-bar">
             <ul>
                 <li><a class="nav-link" href="#About">About</a></li>
@@ -53,7 +55,7 @@ User Story #15: My product landing page should utilize CSS flexbox at least once
 
     <section id="About">                                
         <h2>About</h2>
-        <p>Ilva wasn't always crazy... At one point she was just an everyday normal baby without a care in the world. 
+        <p>Ilva wasn't always crazy... At one point she was just a normal baby without a care in the world. 
             Everything was great until she discovered a deep and disturbing love of trombones. Once Ilva found out about trombones, she became absolutely obsessed. 
             That obsession slowly drove her crazy... for trombones! Ilva would love to share her crazy obsession for trombones with you, 
             so please feel free to send through an email to have a quick chat with Ilva about all things trombone related!</p>   
@@ -92,7 +94,14 @@ User Story #15: My product landing page should utilize CSS flexbox at least once
                 <li>Not rated for hats</li>
             </ol>
         </div>
-    </section>                                                          
+    </section> 
+    <div>
+        <h3>Sign up to our mailing list to hear all about trombones from Ilva herself!</h3>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input name="email" id="email" type="email" placeholder="Enter your email address" required="">
+            <input id="submit" type="submit" value="Sign up now!" class="btn">
+        </form>
+    </div>                                       
     <footer>
         <ul>
             <li><a href="#">Privacy</a></li>
